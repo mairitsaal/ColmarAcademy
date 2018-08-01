@@ -1,6 +1,5 @@
 html {
   font-size: 16px;
-
 }
 
 body {
@@ -12,13 +11,11 @@ header {
   height: 64px;
   background-color: white;
   margin: 0 auto;
-  /*display: flex;*/
-  align-items: center;
 
+  align-items: center;
 }
 
 header .logo {
-
   display: flex;
   align-items: center;
   float: left;
@@ -37,7 +34,7 @@ header .logo {
   color: grey;
 }
 
-nav ul {
+nav ul li {
   float: right;
   padding-right: 16px;
   height: 32px;
@@ -45,11 +42,45 @@ nav ul {
   font-family: "Times New Roman", serif;
   color: #4a4a4c;
   font-size: 18px;
+  display: inline-block;
+  align-items: center;
+}
+.mobile-nav {
+  display: none;
+  width: 470px;
+  height: 62px;
+  background-color: white;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 8px 8px;
+@media only screen and (max-width: 470px) {
+
+  nav ul {
+    display: none;
+  }
+header .logo {
+  display: none;
+
+}
+#strong {
+  display: none;
+}
+
+#light {
+  display: none;
+}
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    align-items: center;
+    border-right: grey;
+    border-left: grey;
+
+  }
+  .mobile-nav img {
+    height: 42px;
+  }
 }
 
 .main-body {
@@ -59,7 +90,6 @@ nav ul li {
 .banner {
  background-color: Gainsboro;
  display: flex;
-
  flex-direction: row;
 }
 
@@ -68,7 +98,6 @@ nav ul li {
   width: 60%;
   padding: 32px 24px;
   margin 0;
-
 }
 
 .textarea {
@@ -77,6 +106,32 @@ nav ul li {
   align-items: center;
   width: 30%;
 
+}
+@media only screen and (max-width: 470px) {
+  .banner {
+    flex-direction: column;
+    background-color: Gainsboro;
+  }
+  .banner img {
+    width: 470px;;
+    height: auto;
+    padding: 0 0;
+  }
+.textarea {
+  margin-bottom: 32px;
+  padding-left: 16px;
+
+}
+nav h1 {
+  justify-content: center;
+  padding-top: 32px;
+  line-height: 1.4;
+}
+
+nav h3 {
+  line-height: 1.4;
+  padding-bottom: 16px;
+  }
 }
 
 nav h1 {
@@ -127,14 +182,23 @@ nav h3 {
   display: flex;
   flex-direction: row;
 }
-
+.mobile-banner {
+  display: none;
+}
 .second-banner img {
   /*background-image: url("./resources/css/images/information-main.jpg");*/
   height: 450px;
   width: 60%;
   padding: 32px 24px;
 }
-
+@media only screen and (max-width: 470px) {
+.second-banner img {
+  display: none;
+}
+  .mobile-banner img {
+    display: block;
+  }
+}
 .text-under-picture nav {
   padding: 0 0 0 24px;
   width: 60%;
