@@ -147,7 +147,6 @@ nav h3 {
   color: #4a4a4c;
   padding-top: 30px;
   line-height: 1.2;
-
 }
 
 #button {
@@ -158,10 +157,8 @@ nav h3 {
   display: flex;
   justify-content: center;
   width: 350px;
-  border-radius: 5px;
-
-
 }
+
 #button:hover {
   background-color: Dimgrey;
   color: white;
@@ -170,53 +167,60 @@ nav h3 {
   display: flex;
   justify-content: center;
   width: 350px;
-  border-radius: 5px;
+
   /*transition: color 750ms linear 250ms;*/
-
-
 }
+
 .second-banner {
   background-color: white;
   font-family: "Calibri", sans-serif;
   line-height: 1.2;
   display: flex;
   flex-direction: row;
+
 }
-.mobile-banner {
+.textarea img {
   display: none;
+
 }
 .second-banner img {
-  /*background-image: url("./resources/css/images/information-main.jpg");*/
   height: 450px;
   width: 60%;
   padding: 32px 24px;
 }
+
+
 @media only screen and (max-width: 470px) {
 .second-banner img {
   display: none;
 }
-  .mobile-banner img {
-    display: block;
+
+  .column-one .textarea img {
+    height: 30px;
+
   }
+  .column {
+    border-left: none;
+  }
+
+.columns .textarea {
+  border-bottom: none;
+  border-top: none;
 }
+
+.column-one {
+  border-bottom: none;
+}
+  .text-under-picture {
+    display: none;
+  }
+
+
+}
+
 .text-under-picture nav {
   padding: 0 0 0 24px;
   width: 60%;
-}
-
-nav h4 {
-  font-family: "Calibri", sans-serif;
-  font-size: 16px;
-  color: #4a4a4c;
-  font-weight: lighter;
-  padding-top: 24px;
-  line-height: 1.4;
-}
-
-#stronger {
-  font-weight: 500;
-  padding-top: 16px;
-  padding-bottom: 32px;
 }
 
 .text-next-picture {
@@ -244,16 +248,27 @@ nav h4 {
   margin: 1px 1px;
   align-items: center;
 }
-.column-one img {
-  width: 35%;
-}
+
 
 .columns .textarea {
   width: 65%;
   display: inline-block;
 
 }
+nav h4 {
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  color: #4a4a4c;
+  font-weight: lighter;
+  padding-top: 24px;
+  line-height: 1.4;
+}
 
+#stronger {
+  font-weight: 500;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
 .column-two {
   display: flex;
   flex-direction: row;
@@ -304,6 +319,22 @@ nav h4 {
   padding-top: 8px;
   line-height: 1.4;
   color: Mediumblue;
+}
+
+nav h4 {
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  color: #4a4a4c;
+  font-weight: lighter;
+  padding-top: 24px;
+  line-height: 1.4;
+  border: 1px solid red;
+}
+
+#stronger {
+  font-weight: 500;
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 
 .third-chapter {
@@ -359,8 +390,76 @@ span h1 {
   padding-top: 8px;
   /*padding-bottom: 24px;*/
   line-height: 1.2;
-
 }
+
+.links {
+  display: none;
+}
+/*.third-chapter-mobile {
+  display: none;
+}*/
+
+@media only screen and (max-width: 470px) {
+  /*body {
+    width: 470px;
+  }*/
+
+  .one-column {
+    display: none;
+  }
+
+  .links {
+    background-color: white;
+    display: flex;
+    /*border: 1px solid red;*/
+    margin-bottom: 32px;
+
+  }
+
+  .links nav span {
+    background-color: Gainsboro;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    color: #4a4a4c;
+    padding: 20px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: left;
+    width: 350px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+  }
+
+  .links nav span:hover {
+    background-color: #a6a6a6;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    color: #4a4a4c;
+    padding: 20px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: left;
+    width: 350px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+  }
+
+  .third-chapter {
+    background-color: white;
+    border: 2px solid Gainsboro;
+  }
+
+  .third-chapter h1 {
+    margin-bottom: 8px;
+
+  }
+  .third-chapter-mobile {
+  }
+}
+
+
 
 .fourth-banner {
   background-color: white;
@@ -384,6 +483,21 @@ span h1 {
   border: 2px solid Lightgrey;
 }
 
+@media only screen and (max-width: 470px){
+  .text-next-picture {
+    display: none;
+  }
+  .fourth-banner video {
+    height: 260px;
+    width: 465px;
+    margin: 0 0;
+    border: 2px solid Lightgrey;
+  }
+
+  .under-picture nav {
+    display: none;
+  }
+}
 .headline h1 {
   font-family: "Calibri", sans-serif;
   font-size: 45px;
