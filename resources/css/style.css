@@ -294,7 +294,6 @@ nav h3 {
   }
 }
 
-
 @media only screen and (max-width: 470px) {
   .second-banner {
       display: flex;
@@ -522,9 +521,7 @@ span h1 {
 .links {
   display: none;
 }
-/*.third-chapter-mobile {
-  display: none;
-}*/
+
 @media only screen and (max-width: 740px) and (min-width: 470px) {
 
   .third-chapter {
@@ -532,8 +529,8 @@ span h1 {
     flex-direction: column;
     margin-top: 64px;
   }
-
 }
+
 @media only screen and (max-width: 470px) {
   .one-column {
     display: none;
@@ -577,16 +574,17 @@ span h1 {
   .third-chapter-mobile {
   }
 }
-
+@media only screen and (max-width: 1040px) and (min-width: 740px) {
+  .under-picture {
+    display: none;
+    }
+}
 @media only screen and (max-width: 740px) and (min-width: 470px) {
 
-  /*video {
-    width: auto;
-  }*/
-  .fourth-banner video {
+  .fourth-section .fourth-banner video {
     width: 100%;
     height: auto;
-
+    margin: 0 0;
   }
 
   .fourth-banner {
